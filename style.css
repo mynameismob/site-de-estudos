@@ -1,0 +1,123 @@
+/* Core layout */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e5e5e5;
+  }
+  .header, .footer {
+    background-color: #1e1e1e;
+  }
+  .toc {
+    background-color: #1a1a1a;
+  }
+  a { color: #89c7ff; }
+}
+
+.header, .footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.search-container {
+  margin-top: 0.5rem;
+  position: relative;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background-color: inherit;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.toc {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc li {
+  margin-bottom: 0.5rem;
+}
+
+.toc a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+/* Quiz styles */
+.quiz-main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.question-block {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
